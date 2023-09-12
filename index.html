@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+<style>
+
+</style>
+</head>
+<body>
+<script src="client.js" defer ></script>
+<h2>Add the user to the system</h2>
+<form id="justAddUser">
+    <label for="addUserName">User Name:</label><br>
+  <input type="text" id="addUserName" name="addUserName"><br><br>
+  <input id = "add" type="submit" value="Add User">
+</form> 
+</form>
+<h2>Fill the form to create or modify reservation</h2>
+
+<form id = "collectData">
+  <label for="fname">User name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="startDate">Start Date:</label><br>
+  <input type="date" id="startDate" name="startDate" required><br>
+  <label for="startTime">Start Time:</label><br>
+  <input type="time" id="startTime" name="startTime" required><br>
+  <label for="numHours">Number of Hours:</label><br>
+  <input type="int" id="numHours" name="numHours" required><br><br>
+  <input id = "submit" type="submit" value="Make/Update Reservation">
+</form> 
+<br>
+
+<h2>Click below to get a list of all reservations. <br>You'll have to click it again to get the updated list</h2>
+<button onclick="allReservations()">Get all reservations</button>
+<br>
+
+<h2>Enter the username that you want to delete</h2>
+<form id = "deleteButton">
+    <label for="userName">User Name:</label>
+    <input type="text" id="userName" name="userName" ><br><br>
+    <input id = "submit" type="submit" value="Delete Reservation">
+    <div id="snackbar">Some text some message..</div>
+</form>
+<br>
+<h2>Reservations table</h2>
+<div id="resTable" class="col-md-6">
+    <table id="firstTabOverall" class="table table-striped" style="font-size:13px"></table>
+</div>
+</body>
+</html>
+
